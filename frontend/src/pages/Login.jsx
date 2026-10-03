@@ -100,7 +100,7 @@ export default function Login() {
         </div>
 
         <a
-          href={`${import.meta.env.VITE_API_URL}/auth/google`}
+          href={`${import.meta.env.VITE_API_URL.replace(/\/api$/, '')}/api/auth/google`}
           className="flex items-center justify-center gap-3 w-full border border-navy-800/20 rounded-lg py-2.5 text-sm font-semibold text-navy-900 hover:bg-parchment/60 transition-colors"
         >
           <img src="https://www.svgrepo.com/show/475656/google-color.svg" className="w-5 h-5" alt="Google" />
