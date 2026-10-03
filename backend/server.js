@@ -36,6 +36,8 @@ app.use("/api/kyc", kycRoutes);
 app.use("/api/cards", cardRoutes);
 app.use("/api/chatbot", chatbotRoutes);
 
+app.get("/", (req, res) => res.json({ message: "SmartBank backend is running" }));
+
 app.use(notFound);
 app.use(errorHandler);
 
